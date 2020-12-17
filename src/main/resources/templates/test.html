@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link th:href="@{/css/index.css}"rel="stylesheet">
+		<title>Insert title here</title>
+	</head>
+
+	<body>
+		<p th:text="${fact}">階乗の計算をします</p>
+		
+		<form action="/homework" method="POST">
+			<label>階乗したい値を入れてください</label><input type="text" name="number" th:value="${number}">
+			<input type="submit", value="送信">
+		</form>
+	</body>
+</html>
